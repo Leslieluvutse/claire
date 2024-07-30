@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <link rel="stylesheet" href="style.css">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+              <title>My Projects</title>
+              <script>
+                    document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        document.querySelectorAll('.project-item').forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+        
+              </script>
+</head>
+<body>
+              <nav>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item"><a class="nav-link text-black" href="index.html">Home</a></li>    
+                                <li class="nav-item"><a class="nav-link text-black" href="about.html">About</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li> -->
+                                <li class="nav-item"><a class="nav-link text-black" href="projects.html">Projects</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link text-white" href="#testimonials">Testimonials</a></li> -->
+                                <li class="nav-item"><a class="nav-link text-black" href="#blog">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link text-black" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+         <div>
+              <section id="projects" class="container my-5">
+                            <h2 class="text-center">Projects</h2>
+                            <div class="text-center mb-4">
+                                <button class="btn btn-outline-light filter-btn" data-filter="all">All</button>
+                                <button class="btn btn-outline-light filter-btn" data-filter="web">Web</button>
+                                <button class="btn btn-outline-light filter-btn" data-filter="mobile">Mobile</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 project-item" data-category="web">
+                                    <div class="card mb-4">
+                                        <img src="ceiling-lamp-335975_1280.jpg" class="card-img-top" alt="Project 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 1</h5>
+                                            <p class="card-text">Description of Project 1.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 project-item" data-category="mobile">
+                                    <div class="card mb-4">
+                                        <img src="Kitchen 3d.jpeg" class="card-img-top" alt="Project 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 2</h5>
+                                            <p class="card-text">Description of Project 2.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 project-item" data-category="web">
+                                    <div class="card mb-4">
+                                        <img src="sofa-6560374_640.png" class="card-img-top" alt="Project 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 3</h5>
+                                            <p class="card-text">Description of Project 3.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    
+         </div>     
+</body>
+<footer class="bg-dark text-white text-center py-4">
+              <p>&copy; 2023 Claire Njagi. All rights reserved.</p>
+              <div class="social-icons">
+                  <a href="https://twitter.com/clairenjagi" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href="https://linkedin.com/in/clairenjagi" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                  <a href="https://github.com/clairenjagi" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+              </div>
+          </footer>
+</html>

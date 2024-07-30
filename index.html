@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire Njagi's Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-left py-4">
+        <h1>Claire Njagi</h1>
+        <nav>
+            <ul class="nav d-flex justify-content-end">
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                <!-- <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li> -->
+                <li class="nav-item"><a class="nav-link text-white" href="projects.html">Projects</a></li>
+                <!-- <li class="nav-item"><a class="nav-link text-white" href="#testimonials">Testimonials</a></li> -->
+                <li class="nav-item"><a class="nav-link text-white" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="jumbotron jumbotron-fluid bg-dark text-white text-center">
+        <div class="container">
+            <h1 class="display-1 d-flex justify-content-start">Welcome to Claire Njagi's Portfolio</h1>
+            <p class="lead">Passionate web developer creating beautiful and functional websites.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container my-5">
+        <h2 class="text-center">About Me</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="ceiling-lamp-335975_1280.jpg" alt="Claire Njagi" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <p>Hello! I'm Claire Njagi, a passionate web developer with a love for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various frameworks and libraries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container my-5">
+        <h2 class="text-center">Skills</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-code fa-3x"></i>
+                <h3>HTML/CSS</h3>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fab fa-js fa-3x"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fab fa-react fa-3x"></i>
+                <h3>React</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container my-5">
+        <h2 class="text-center">Projects</h2>
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-light filter-btn" data-filter="all">All</button>
+            <button class="btn btn-outline-light filter-btn" data-filter="web">Web</button>
+            <button class="btn btn-outline-light filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+        <div class="row">
+            <div class="col-md-4 project-item" data-category="web">
+                <div class="card mb-4">
+                    <img src="ceiling-lamp-335975_1280.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Description of Project 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 project-item" data-category="mobile">
+                <div class="card mb-4">
+                    <img src="Kitchen 3d.jpeg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description of Project 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 project-item" data-category="web">
+                <div class="card mb-4">
+                    <img src="sofa-6560374_640.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Description of Project 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="container my-5">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">"Claire is an excellent developer with a keen eye for detail."</p>
+                        <h5 class="card-title">John Doe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">"Her work is always top-notch and delivered on time."</p>
+                        <h5 class="card-title">Jane Smith</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">"Claire's creativity and technical skills are impressive."</p>
+                        <h5 class="card-title">Sam Johnson</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="container my-5">
+        <h2 class="text-center">Blog</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="ceiling-lamp-335975_1280.jpg" class="card-img-top" alt="Blog Post 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Post 1</h5>
+                        <p class="card-text">Summary of Blog Post 1.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Kitchen 3d.jpeg" class="card-img-top" alt="Blog Post 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Post 2</h5>
+                        <p class="card-text">Summary of Blog Post 2.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="sofa-6560367_640.webp" class="card-img-top" alt="Blog Post 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Post 3</h5>
+                        <p class="card-text">Summary of Blog Post 3.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Me</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+            Your message has been sent successfully!
+        </div>
+    </section>
+
+    <section id="resume" class="container my-5 text-center">
+        <h2>Download My Resume</h2>
+        <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2023 Claire Njagi. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://twitter.com/clairenjagi" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://linkedin.com/in/clairenjagi" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/clairenjagi" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('successMessage').style.display = 'block';
+        });
+
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                document.querySelectorAll('.project-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
