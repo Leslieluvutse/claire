@@ -1,7 +1,7 @@
 body {
               font-family: Arial, sans-serif;
-              background-color: #1b1919;
-              color: #ab7979;
+              /* background-color: #1b1919; */
+              /* color: #ab7979; */
           }
           
           header {
@@ -43,7 +43,84 @@ body {
           header h1 {
               margin: 0;
           }
-          
+          .bg-dark{
+              background-color: #212529 !important;
+          }
+          .text-white{
+              color: #ffffff !important;
+          }
+          .jumbotron h1{
+              font-size: 48px;
+              font-weight: bold;
+          }
+          .jumbotron p{
+              font-size: 18px;
+          }
+          .nav-link{
+              color: #ffffff !important;
+          }
+          .nav-link:hover{
+              color: #3498db !important;
+          }
+          .card{
+              border: none;
+              border-radius: 10px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          .card-img-top {
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+          }
+          .card-body {
+              padding: 20px;
+          }
+          .card-title {
+              font-size: 24px;
+              font-weight: bold;
+          }
+          .card-text {
+              font-size: 18px;
+          }
+          .btn {
+              border-radius: 10px;
+              padding: 10px 20px;
+          }
+          .btn-primary {
+              background-color: #3498db;
+              border-color: #3498db;
+          }
+          .btn-primary:hover {
+              background-color: #2e6da4;
+              border-color: #2e6da4;
+          }
+          .filter-btn {
+              background-color: #ffffff;
+              border-color: #3498db;
+              color: #3498db;
+          }
+          .filter-btn:hover {
+              background-color: #3498db;
+              border-color: #3498db;
+              color: #ffffff;
+          }
+          .project-item {
+              margin-bottom: 20px;
+          }
+          .social-icons {
+              margin-top: 20px;
+          }
+          .social-icons a {
+              margin-right: 20px;
+          }
+          .social-icons a:hover {
+              color: #3498db;
+          }
+          footer {
+              background-color: #212529;
+              color: #ffffff;
+              padding: 20px;
+              text-align: center;
+          }
           nav ul {
               list-style: none;
               padding: 0;
@@ -140,4 +217,28 @@ body {
                   margin: 0 5px;
               }
           }
+          .loading-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: loading 2s infinite;
+        }
+        
+        @keyframes loading {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
           
